@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "functions": {
+    "api/lookup.js": {
+      "runtime": "nodejs22.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/lookup.js"
+    }
+  ]
+}
